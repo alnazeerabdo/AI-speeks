@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (error) {
             console.error("Network Error:", error);
-            alert("حدث خطأ في الاتصال بالخادم.");
+            alert(`حدث خطأ في الاتصال بالخادم: ${error.message}\nتأكد من اتصالك بالإنترنت وأن مفتاح API صحيح.`);
         } finally {
             // Hide Loading
             loadingSpinner.classList.add('hidden');

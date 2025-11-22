@@ -22,58 +22,26 @@
                 <i data-lucide="sparkles"></i>
                 <h1>AI Speeks</h1>
             </div>
-            <p class="subtitle">حول صوتك إلى نص دقيق باستخدام الذكاء الاصطناعي.</p>
-        </header>
-
-        <div class="controls-section">
-            <div class="input-group">
-                <label for="modelSelect">اختر النموذج</label>
-                <select id="modelSelect">
-                    <option value="openai/whisper">OpenAI Whisper (الأسرع)</option>
-                    <option value="google/gemini-pro">Gemini Pro (تجريبي)</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="recorder-section">
-            <div class="mic-wrapper">
-                <div class="ring ring-1"></div>
-                <div class="ring ring-2"></div>
-                <div class="ring ring-3"></div>
-                <button id="micButton" class="mic-button" aria-label="بدء التسجيل">
-                    <i data-lucide="mic" id="micIcon"></i>
-                </button>
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+            <button id="micButton" class="mic-button" aria-label="بدء التسجيل">
+                <i data-lucide="mic" id="micIcon"></i>
+            </button>
             </div>
             <p id="statusText" class="status">اضغط للتحدث</p>
-        </div>
-
-        <div class="transcript-container">
-            <div class="transcript-header">
-                <span>النص المحول</span>
-                <div class="actions">
-                    <button id="copyButton" class="action-btn" title="نسخ النص">
-                        <i data-lucide="copy"></i> نسخ
-                    </button>
-                    <button id="clearButton" class="action-btn" title="مسح النص">
-                        <i data-lucide="trash-2"></i> مسح
-                    </button>
-                </div>
             </div>
-            <div class="textarea-wrapper">
-                <textarea id="transcriptOutput" placeholder="سيظهر النص هنا بعد الانتهاء من التسجيل..."
-                    readonly></textarea>
-                <div id="loadingSpinner" class="spinner hidden">
-                    <i data-lucide="loader-2" class="spin-icon"></i>
-                    <span>جاري المعالجة...</span>
-                </div>
-            </div>
-        </div>
-    </main>
 
-    <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+            <div class="transcript-container">
+                <div class="transcript-header">
+                    <span>النص المحول</span>
+                    <div class="actions">
+                        <button id="copyButton" class="action-btn" title="نسخ النص">
+                            <i data-lucide="copy"></i> نسخ
+                        </button>
+                        <button id="clearButton" class="action-btn" title="مسح النص">
+                            lucide.createIcons();
+                            </script>
 </body>
 
 </html>
